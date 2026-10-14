@@ -9,6 +9,11 @@ const bookList = [
 // For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Add in your code here:
 
+for (e of bookList){
+    console.log(`${e.title} by ${e.author}`)
+}
+
+
 
 
 // Expected Output 1:
