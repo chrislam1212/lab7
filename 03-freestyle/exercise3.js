@@ -2,9 +2,16 @@
 
 const contains = (array, target) => {
 
+    for (e of array) {
+        
+        if (e == target) {
+            return true
+        }   
 
+       
 
-    
+    }
+    return false
 }
 
 // DO NOT EDIT THE CODE BELOW

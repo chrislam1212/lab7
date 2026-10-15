@@ -13,9 +13,6 @@ for (e of bookList){
     console.log(`${e.title} by ${e.author}`)
 }
 
-
-
-
 // Expected Output 1:
 // Harry Potter by J.K. Rowling
 // Never Eat Alone by Keith Ferrazzi
@@ -30,9 +27,10 @@ for (e of bookList){
 
 function printBookList(bookList, completedReadingBook){
     // Add your code here:
-
-
-    
+        for (book of bookList)
+            if (completedReadingBook == book.alreadyRead) {
+                console.log(`${book.title} by ${book.author}`)
+            }
 }
 
 // DO NOT EDIT THE CODE BELOW
