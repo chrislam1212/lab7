@@ -2,14 +2,15 @@
 // Tips: you can consider a string as an array (i.e. you can loop thru a string using loops and index)
 
 const checkWord = (input) => {
+    result = true
     length = input.length
     for (i = 0; i < length; i++) {
         if (input[i] !== input[length - i - 1]) {
-            return false 
+            result = false 
         }
     }
 
-    return true    
+    return result 
 }
 
 // DO NOT EDIT THE CODE BELOW
